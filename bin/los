@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+const program = require('commander');
+const init = require('../lib/init');
+const build = require('../lib/build');
+const preview = require('../lib/preview');
+
+program.version('0.0.1');
+
+program
+  .command('help')
+  .description('显示帮助')
+  .action(() => {
+    program.outputHelp();
+  });
+
+program
+  .command('init [dir]')
+  .description('初始化一个博客')
+  .action(init);
+
+program
+  .command('preview [dir]')
+  .description('预览文章')
+  .action(preview);
+
+program
+  .command('build [dir]')
+  .description('站点生成')
+  .option('-o, --output [dir]', '生成目录')
+  .action(build);
+
+program.parse(process.argv);

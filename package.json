@@ -8,7 +8,14 @@
   },
   "author": "phantomk",
   "license": "ISC",
+  "bin": {
+    "los": "./bin/los"
+  },
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "koa": "^2.0.0-alpha.7",
+    "koa-router": "^7.0.1",
+    "koa-static": "^2.0.0",
+    "markdown-it": "^8.1.0"
   }
 }
