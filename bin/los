@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --harmony
 const program = require('commander');
 const init = require('../lib/init');
 const build = require('../lib/build');
