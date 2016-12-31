@@ -48,4 +48,11 @@ jspm_packages
 # Yarn Integrity file
 .yarn-integrity
 
+# Webstorm config directory
 .idea/
+
+# Vscode config directory
+.vscode/
+
+# Todo file
+*.todo
